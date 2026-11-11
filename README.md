@@ -50,7 +50,7 @@ metrics = model.val(data='/content/test_evaluate.yaml', conf=0.001, iou=0.6, aug
 print(f"🏆 Test mAP50: {metrics.box.map50 * 100:.2f}% | mAP50-95: {metrics.box.map * 100:.2f}%")
 ```
 
-### 3. Run Inference with Heuristics and Generate `submission.csv`
+### 3. Run Inference and Generate `submission.csv`
 To run optimized inference with Test-Time Augmentation (TTA) and class-specific size heuristics that filter out false-positive hallucinations, execute the final pipeline script:
 ```python
 import os
