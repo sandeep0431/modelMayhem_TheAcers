@@ -15,6 +15,19 @@ This repository contains the training configuration, model weights, evaluation p
 
 ---
 
+## 🔄 Pipeline at a Glance
+
+```mermaid
+flowchart TD
+    A[Input Images] --> B[Roboflow Dataset<br/>Automated download and YOLO format]
+    B --> C[YOLOv8m Architecture<br/>T4 GPU · 50 epochs · AdamW optimizer]
+    C --> D[Test-Time Augmentation<br/>Improves feature recall at inference]
+    D --> E[Class-Specific Size Heuristics<br/>Filters false positives]
+    E --> F[submission.csv<br/>80.28% mAP50]
+```
+
+---
+
 ## 📂 How to Use the Test Set and Evaluate Results
 
 To test the model on your dataset, verify performance using ground truth labels, and generate the final submission CSV, follow these steps in your Google Colab notebook:
