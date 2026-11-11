@@ -1,4 +1,4 @@
-# 🏆 PCB Defect Detection - YOLOv8m Hackathon Solution
+# 🏆 PCB Defect Detection 
 
 [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1rNyNzX7uO0CLGNAEE_0wqQ7PajajdlRV?usp=sharing)
 
